@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+body {
+    height: 100%;
+    margin: 0;
+    display: block;
+    background-image: url(img/bg.jpg);
+    background-repeat:  no-repeat;
+    background-size: cover;
+}
+body .background{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.abrirmodal {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-family: Rock Salt;
+    font-size: 50px;
+    padding: 20px;
+    color: rgb(255, 123, 0);
+    border: 4px solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px black;
+}
+.abrirmodal2 {
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    font-family: Rock Salt;
+    font-size: 50px;
+    padding: 20px;
+    color: rgb(255, 123, 0);
+    border: 4px solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px black;
+}
+.abrirmodal3 {
+    position: absolute;
+    left: 50px;
+    top: 350px;
+    font-family: Rock Salt;
+    font-size: 50px;
+    padding: 20px;
+    color: rgb(255, 123, 0);
+    border: 4px solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px black;
+}
+.abrirmodal:hover {
+    transform: scale(1.2); 
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.abrirmodal2:hover {
+    transform: scale(1.2); 
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.abrirmodal3:hover {
+    transform: scale(1.2); 
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#abrefecha:checked + .modal {
+    display: flex;
+}
+#abrefecha2:checked + .modal {
+    display: flex;
+}
+#abrefecha3:checked + .modal {
+    display: flex;
+}
+.modal {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 99999;
+}
+.checkboxver {
+    display: none;
+}
+.modal .fecharmodal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(255, 123, 0);
+    font-family: Rock Salt;
+    font-size: 20px;
+}
+.modal .fecharmodal:hover{
+    cursor: pointer;
+    color: red;
+    font-family: Rock Salt;
+    font-size: 20px;
+    transform: scale(1.5);
+    z-index: 999999;
+}
+.modal .conteudo {
+    width: 90%;
+    height: 80%;
+    border: 5px solid rgb(255, 123, 0);
+    border-radius: 10px;
+    background: rgb(20, 21, 31);
+    box-shadow: 5px 5px 15px black;
+    overflow: auto;
+}
+.imagens li {
+    display: inline-block;
+}
+.img {
+    margin: 20px 20px 20px 20px;
+    width: 185px;
+    height: 250px;
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 3px;
+}
+.titulo {
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+.register a {
+    text-decoration: none;
+    color: rgb(255, 123, 0);
+}
+.register {
+    position: absolute;
+    font-family: Rock Salt;
+    top: 20px;
+    right: 10px;
+}
+.register:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.login {
+    position: absolute;
+    font-family: Rock Salt;
+    top: 20px;
+    right: 550px;
+}
+.login a {
+    text-decoration: none;
+    color: rgb(255, 123, 0);
+}
+.login:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#email {
+    position: absolute;
+    font-family: Rock Salt;
+    right: 350px;
+    top: 10px;
+    background: none;
+    outline: none;
+    color: rgb(255, 123, 0);
+}
+#password {
+    position: absolute;
+    font-family: Rock Salt;
+    right: 110px;
+    top: 10px;
+    background: none;
+    outline: none;
+    color: rgb(255, 123, 0);
+}
